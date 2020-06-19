@@ -15,10 +15,10 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest]
         include:
-		  - os: macos-latest
-			TestOPT: "--enable-test-discovery"
-	      - os: ubuntu-latest
-	        TestOPT: ""
+          - os: macos-latest
+            TestOPT: "--enable-test-discovery"
+          - os: ubuntu-latest
+            TestOPT: ""
 
     steps:
     - uses: actions/checkout@v2

@@ -262,7 +262,7 @@ let inputProperties = [
 let serializedInPr = inputProperties.flatMap{$0.serialize()}
 
 let initialMessages: [[UInt8]] = [
-	Config.ProtocolVersion(major: 2, minor: 30).serialize(),
+	Config.ProtocolVersion(major: 3, minor: 35).serialize(),
 	Config.ProductInfo(name: "ATEM 1 ME Production Studio 4K Simulator", model: .mini).serialize(),
 	Config.Topology(
 		mixEffectBlocks: 1,
